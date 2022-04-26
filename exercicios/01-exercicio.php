@@ -11,7 +11,7 @@
 
     $data = date('d/m/Y');
     const NOME = "Jorge";
-    $idade = 33;
+    $idade = date('Y') - 1989;
     const CIDADE = "São Paulo";
 ?>
 
