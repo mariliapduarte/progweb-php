@@ -10,12 +10,12 @@
     <?php
 
     $data = date('d/m/Y');
-    $nome = "Jorge";
+    const NOME = "Jorge";
     $idade = 33;
-    $cidade = "São Paulo";
+    const CIDADE = "São Paulo";
 ?>
 
-<p>Hoje é <?=$data?>. <?=$nome?> tem <?=$idade?> anos e nasceu em <?=$cidade?>.</p>
+<p>Hoje é <?=$data?>. <?=NOME?> tem <?=$idade?> anos e nasceu em <?=CIDADE?>.</p>
     
 </body>
 </html>
