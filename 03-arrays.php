@@ -40,8 +40,35 @@
             "ucs" => 5
         ]
     ?>
-<p> O curso de <?=$curso["nome"]?> tem <?=$curso["carga_horaria"]?> horas, é presencial na <?=$curso["unidade"]?> e tem <?=$curso["ucs"]?> UC's</p>
+<p> 
+    O curso de <?=$curso["nome"]?> tem <?=$curso["carga_horaria"]?> horas, é presencial na <?=$curso["unidade"]?> e tem <?=$curso["ucs"]?> UC's
+</p>
 
+<hr>
+
+<h2>Funções de debug/ depuração</h2>
+
+<pre>
+<?=print_r($cursos)?> <!-- "Abrir" o array para avaliar a estrutura (mostra os indices e valores) -->
+
+<!--[0] => HTML5
+    [1] => React
+    [2] => Node.js
+    [3] => PHP -->
+</pre>
     
+<pre>
+<?=var_dump($cursos)?> <!-- "Abrir" o array + detalhado -->
+<!-- array(4 "quantidade de valores") {
+  [0 "indice"]=>
+  string - "tipo" (5 "caracteres") "HTML5"
+  [1]=>
+  string(5) "React"
+  [2]=>
+  string(7) "Node.js"
+  [3]=>
+  string(3) "PHP" -->
+</pre>
+
 </body>
 </html>
