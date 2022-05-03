@@ -39,7 +39,7 @@ do {
     <h2>for (para)</h2>
 <?php
     // inicialização ; condição; atualização
-for( $i = 1; $i <= 3; $i++ ){
+for( $i = 1; $i <= 3; $i++ ){ /* ++ serve para parar o looping, se não ele fica infinitamente */
 ?>
     <p>Valor de i é <b><?=$i?></b> </p>
 <?php
@@ -49,6 +49,28 @@ for( $i = 1; $i <= 3; $i++ ){
     <h2>Exercício Array e Loop</h2>
     <p>Crie um array contendo os nomes dos 12 meses do ano.</p>
     <p>Usando um loop, faça o nome dos meses aparecer em uma lista ordenada.</p>
+
+<?php
+$meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+
+?>
+
+<!-- Lista OL inicia e termina independentemente do PHP -->
+
+<ol>
+    <?php for($i = 0; $i < count($meses); $i++){ ?>  <!-- sempre que a variavel estiver dentro dos () é porque está sendo criada novamente -->
+        <!-- Os itens da lista dependem do PHP "for" -->
+    <li> <?=$meses[$i]?></li> 
+    <?php } ?>
+</ol>
+
+
+
+
+
+
+
+
 
 </body>
 </html>
