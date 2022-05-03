@@ -21,15 +21,21 @@ if ( $salario < 500 ) {
     $novo = $salario * 1.05;
 }
 
-number_format($salario, 2, ',', '.'); 
-number_format($novo, 2, ',', '.');
-
-echo "<p>Salario atual: $salario</p>";
-echo  "<p>Novo salario: $novo</p>";
-
 
 
 ?>
+
+<!-- 
+    number_format(
+        valor,
+        quantidade de casas decimais,
+        "separador de casa decimal",
+        "separador de milhar"
+    ) 
+-->
+<p> R$ <?=number_format($salario,2,",",".")?> 
+    e R$ <?=number_format($novo, 2, ",", ".")?>
+</p>
 
     
 </body>
