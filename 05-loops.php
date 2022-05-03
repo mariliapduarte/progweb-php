@@ -70,10 +70,12 @@ $meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "
 <ol>
     <?php foreach($meses /* aqui vai ser sempre um array */ as $mes /* aqui qq nome de variavel (criar agora) */){ ?> <!-- para cada "mes" contar os "meses" -->
         <li> <?=$mes?> </li>
-    
+    <!-- Prof gosta de usar aqui a nova variavel o plural ou o singular do array -->
     
     <?php }     ?>
 </ol>
+
+
 
 
 
