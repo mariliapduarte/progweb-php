@@ -75,16 +75,22 @@ $meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "
     <?php }     ?>
 </ol>
 
+<?php
+//array associativo (formado por pares de chaves=>valor)
+        $curso = [
 
+            //key => value
+            "nome" => "Programador web",
+            "carga_horaria" => 240,
+            "unidade" => "Penha",
+            "ucs" => 5
+        ];
 
-
-
-
-
-
-
-
-
+        foreach($curso as $key => $value){
+            ?>
+            <p> <?=$key?> - <?=$value?> </p>
+        <?php
+        } ?>
 
 </body>
 </html>
