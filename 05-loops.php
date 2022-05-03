@@ -64,6 +64,18 @@ $meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "
     <?php } ?>
 </ol>
 
+<h2>foreach (para cada)</h2>
+<p>loop exclusivo para arrays</p>
+
+<ol>
+    <?php foreach($meses /* aqui vai ser sempre um array */ as $mes /* aqui qq nome de variavel (criar agora) */){ ?> <!-- para cada "mes" contar os "meses" -->
+        <li> <?=$mes?> </li>
+    
+    
+    <?php }     ?>
+</ol>
+
+
 
 
 
