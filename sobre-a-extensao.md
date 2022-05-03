@@ -1,1 +1,1 @@
-<!-- baixamos a extensão intelephense e depois buscamos em extensões @builtin php e desabilitamos a segunda opção para não ficar mostrando as sugestões repetidas -->
+<!-- baixamos a extensão intelephense e depois buscamos em extensões "@builtin php" e desabilitamos a segunda opção (PHP language features) para não ficar mostrando as sugestões repetidas -->
