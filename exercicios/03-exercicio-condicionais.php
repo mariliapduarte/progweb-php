@@ -33,8 +33,8 @@ if ( $salario < 500 ) {
         "separador de milhar"
     ) 
 -->
-<p> R$ <?=number_format($salario,2,",",".")?> 
-    e R$ <?=number_format($novo, 2, ",", ".")?>
+<p> Salário anterior R$ <?=number_format($salario,2,",",".")?>. </br>
+Salário atual R$ <?=number_format($novo, 2, ",", ".")?>.
 </p>
 
     
