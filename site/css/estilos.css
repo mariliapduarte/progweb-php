@@ -1,0 +1,38 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+main {flex: 1; }
+
+html {font-size: 14px;}
+
+img { max-width: 100%;}
+
+body {
+    padding: 8%;
+    background-color: beige;
+}
+
+header {
+    background-color: rgb(217, 235, 219);
+    padding: 2%;
+}
+
+footer {
+    background-color: rgb(217, 235, 219);
+    padding: 2%;
+
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+}
+
+main {
+    background-color: rgb(224, 224, 224);
+    padding: 6%;
+}
+
+
+
