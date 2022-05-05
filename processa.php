@@ -8,11 +8,19 @@
 </head>
 <body>
 
-    <h1>Obrigada!</h1>
-    <p>Recebemos sua mensagem.</p>
-
+    <h1>Processamento de Dados</h1>
+   
 
 <?php
+if( empty($_POST["nome"]) || empty($_POST["email"]) ){
+?>
+<p style="color: red;">Por favor, preencha Nome e E-mail!</p>
+<!-- <p><a href="08-formulario.html">Voltar.</a></p> se eu colocar esse link, quando o usuario clicar em voltar, apaga tudo... pelo meio convencional, que é a seta de voltar, ele volta com os dados ainda preenchidos. -->
+
+<?php
+}else{
+
+
 // $_POST - array interno/ nativo do PHP/ var_dump é importante fazer testes, principal de forms.
 /* echo "<pre>";
 var_dump($_POST);
@@ -51,7 +59,7 @@ $mensagem = $_POST["mensagem"];
     <li> Mensagem:<?=$mensagem?> </li>
    
 </ul>
-
+<?php }?>
 
 </body>
 </html>

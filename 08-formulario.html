@@ -13,11 +13,11 @@
     <form action="processa.php" method="post"> <!-- para formulário de coleta de dados usar sempre "post", o "get" é usado para pesquisa, busca - não guarda os dados de forma segura.-->
         <p>
             <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome">
+            <input required type="text" name="nome" id="nome">
         </p>
         <p>
             <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email">
+            <input required type="email" name="email" id="email">
         </p>
         <p>
             <label for="idade">Idade:</label>
@@ -44,7 +44,7 @@
             <input type="radio" name="informativos" id="sim" value="sim">
             <label for="sim">Sim</label>
             
-            <input type="radio" name="informativos" id="nao" value="não">
+            <input checked type="radio" name="informativos" id="nao" value="não">
             <label for="nao">Não</label>
         </div>
 
